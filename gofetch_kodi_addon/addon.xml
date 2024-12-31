@@ -1,0 +1,16 @@
+
+<addon id="plugin.video.gofetchvideo" version="1.0.0" name="Go Fetch a Video" provider-name="GoFetch">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.video">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="default.py"/>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary>Fetch a random video from Go Fetch a Video</summary>
+    <description>This add-on opens the Go Fetch a Video site to randomly select video content.</description>
+</addon>
