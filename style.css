@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.iso-button {
+    background: linear-gradient(145deg, #ffffff, #d1d1d1);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #b8b8b8, -3px -3px 6px #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.iso-button:hover {
+    box-shadow: inset 3px 3px 6px #b8b8b8, inset -3px -3px 6px #ffffff;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+}
