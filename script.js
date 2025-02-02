@@ -1,16 +1,18 @@
-fetch('urls/url-lists.json')
-    .then(response => response.json())
-    .then(data => {
-        const button1Urls = data.button1;
-        const button2Urls = data.button2;
+document.addEventListener("DOMContentLoaded", () => {
+    let links = document.querySelectorAll("#url-list a"); // Select all links inside #url-list
+    let urls = [];
 
-        document.getElementById("button1").addEventListener("click", () => {
-            const randomUrl = button1Urls[Math.floor(Math.random() * button1Urls.length)];
-            window.location.href = randomUrl;
-        });
-
-        document.getElementById("button2").addEventListener("click", () => {
-            const randomUrl = button2Urls[Math.floor(Math.random() * button2Urls.length)];
-            window.location.href = randomUrl;
-        });
+    links.forEach(link => {
+        urls.push(link.href); // Extract URL from each <a> tag
     });
+
+    console.log("Extracted URLs:", urls);
+
+    // Example: Do something with the URLs (e.g., displaying them)
+    let outputDiv = document.getElementById("output");
+    urls.forEach(url => {
+        let p = document.createElement("p");
+        p.textContent = `Processing URL: ${url}`;
+        outputDiv.appendChild(p);
+    });
+});
