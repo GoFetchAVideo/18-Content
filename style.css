@@ -1,29 +1,26 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-}
+/* --- New 3D ISO Button Styles --- */
 
 .button-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    /* Optional: Center the container itself within its section */
+    margin: 20px auto; 
+    width: fit-content;
 }
 
 .iso-button {
     width: 200px;
     height: 60px;
+    /* Styles for the button's appearance (darker, metallic look) */
     background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
     border: 2px solid #000;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    transform: skewY(-15deg);
+    
+    /* Key for the Isometric Effect */
+    transform: skewY(-15deg); 
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,11 +32,11 @@ body {
 }
 
 .iso-button:hover {
-    transform: skewY(-15deg) translateY(-10px);
+    transform: skewY(-15deg) translateY(-10px); /* Lifts on hover */
     box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.2), 10px 10px 20px rgba(0, 0, 0, 0.8);
 }
 
 .iso-button:active {
-    transform: skewY(-15deg) translateY(5px);
+    transform: skewY(-15deg) translateY(5px); /* Pushes down on click */
     box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
