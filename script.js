@@ -4,7 +4,7 @@ const urlLists = [
     [], 
     // Button 1 URLs list (index 1)
     [
-            "https://www.xvideos.com/video.ublvdtmc3b2/my_best_friend_stole_my_girlfriend_isiah_maxwell_anna_claire_clouds_billy_boston",
+"https://www.xvideos.com/video.ublvdtmc3b2/my_best_friend_stole_my_girlfriend_isiah_maxwell_anna_claire_clouds_billy_boston",
             "https://www.xvideos.com/video.ucvhlav1514/blacked_size-queen_kendra_needs_a_real_bbc_to_please_her",
             "https://www.xvideos.com/video.uilvkfd0d06/blacked_diamond_has_secret_affair_with_her_bestie_s_hot_bf",
             "https://www.xvideos.com/video.uiiiouo17d2/blacked_-_double_team_-_the_double_penetration_compilation",
@@ -159,19 +159,19 @@ function openRandomUrl(buttonIndex) {
 }
 
 
-// Tic Tac Toe Game
+// Tic Tac Toe Game (Placeholder)
 function playTicTacToe() {
   alert("Tic Tac Toe is coming soon!");
   document.getElementById("output").innerHTML = "Stay tuned for Tic Tac Toe!";
 }
 
-// Memory Game
+// Memory Game (Placeholder)
 function playMemoryGame() {
   const message = "Match the cards!";
   document.getElementById("output").innerHTML = message;
 }
 
-// Rock Paper Scissors Game
+// Rock Paper Scissors Game (Placeholder)
 function playRockPaperScissors() {
   const options = ["Rock", "Paper", "Scissors"];
   const userChoice = prompt("Choose Rock, Paper, or Scissors:");
