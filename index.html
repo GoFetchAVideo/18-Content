@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D ISO Buttons</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Fun Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="button-container">
+  <header>
+    <h1>Welcome to My Cool Website</h1>
+    <p>Play games, have fun, and enjoy the vibes!</p>
+  </header>
+
+  <main>
+    <section id="iso-buttons" style="margin-top: 20px;">
+      <h2>3D ISO Buttons Section</h2>
+      <div class="button-container">
         <div class="iso-button" onclick="openRandomUrl(1)">Button 1</div>
         <div class="iso-button" onclick="openRandomUrl(2)">Button 2</div>
-    </div>    
-<section id="new-feature-link">
-  <h2>Check out our new feature!</h2>
-  <a href="./new_feature/index.html">
-    <button>Explore the New Feature</button>
-  </a>
-</section>
+      </div>
+    </section>
+
+    <section id="new-feature-link" style="margin-bottom: 30px;">
+      <h2>🚀 Check out our **Brand New Feature**! 🚀</h2>
+      <a href="./new_feature/index.html">
+        <button style="padding: 15px 30px; font-size: 20px; background: #d9534f; color: white;">
+          Go to New Feature
+        </button>
+      </a>
+    </section>
+
+    <section id="game-container">
+      <h2>Fun Games</h2>
+      <button onclick="playTicTacToe()">Play Tic Tac Toe</button>
+      <button onclick="playMemoryGame()">Play Memory Game</button>
+      <button onclick="playRockPaperScissors()">Play Rock Paper Scissors</button>
+    </section>
+
+    <section id="output-container">
+      <h2>Game Output</h2>
+      <div id="output"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Me!</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
